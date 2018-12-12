@@ -1,4 +1,4 @@
-package cn.edu.zzti.ntity;
+package cn.edu.zzti.entity;
 
 import java.util.UUID;
 
