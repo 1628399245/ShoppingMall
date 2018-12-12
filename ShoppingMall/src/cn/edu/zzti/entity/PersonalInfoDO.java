@@ -1,6 +1,6 @@
 package cn.edu.zzti.entity;
 
-public class PersonInfoDO {
+public class PersonalInfoDO {
 	
 	//page1 »ù´¡ÐÅÏ¢
 	
@@ -17,7 +17,7 @@ public class PersonInfoDO {
 	private String major;
 	private String realName;
 	
-	public PersonInfoDO(Integer age, String gender, String address, String tel, String email, String graduaterSchool,
+	public PersonalInfoDO(Integer age, String gender, String address, String tel, String email, String graduaterSchool,
 			String highestEducation, String major, String realName) {
 		super();
 		this.age = age;
