@@ -55,6 +55,7 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
 # Compiled class file
 *.class
 
