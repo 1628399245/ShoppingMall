@@ -3,6 +3,10 @@ package cn.edu.zzti.entity;
 import java.util.UUID;
 
 public class AuctionDO {
+	
+	/*
+	 * 创建Aution类,实现对商品基本信息的封装,包括商品id,商品名称,商品描述,价格等.
+	 */
 
 	private String id;
 	private String title;
