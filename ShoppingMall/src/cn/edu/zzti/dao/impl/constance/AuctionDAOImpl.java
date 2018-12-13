@@ -11,6 +11,12 @@ import cn.edu.zzti.entity.AuctionDO;
 
 public class AuctionDAOImpl implements AuctionDAO{
 	
+	/*
+	 * AuctionDAO的实现,利用HashMap存储所有商品.
+	 * 商品ID作为键,商品AuctionDO作为值,增加,删除.
+	 * 更新商品就是针对该HashMap作相应的增删改操作.
+	 */
+	
 	private static Map <String,AuctionDO> auctionList =new HashMap<String,AuctionDO>();
 	static {
 		for(int i=0;i<20;i++) {
