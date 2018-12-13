@@ -7,6 +7,10 @@ import cn.edu.zzti.entity.PersonalInfoDO;
 import cn.edu.zzti.entity.UserDO;
 
 public class PersonalDAOImpl implements PersonalInfoDAO{
+	
+	/*
+	 * PersonalDAO的实现与UserDAO一致.
+	 */
 
 	@Override
 	public PersonalInfoDO getPersonalInfo(String username) throws SQLException {
@@ -27,7 +31,5 @@ public class PersonalDAOImpl implements PersonalInfoDAO{
 		}
 		
 	}
-	
-	
 
 }
