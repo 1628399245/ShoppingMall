@@ -2,6 +2,10 @@ package cn.edu.zzti.entity;
 
 public class PersonalInfoDO {
 	
+	/*
+	 * PersonInfoDO类实现对个人基本信息的封装,如年龄,性别,地址,电话,邮箱等基本信息及专业,毕业院校等学历信息.
+	 */
+	
 	//page1 基础信息
 	
 	private Integer age;
