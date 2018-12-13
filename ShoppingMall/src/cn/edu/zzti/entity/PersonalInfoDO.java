@@ -18,7 +18,7 @@ public class PersonalInfoDO {
 	private String realName;
 	
 	public PersonalInfoDO(Integer age, String gender, String address, String tel, String email, String graduaterSchool,
-			String highestEducation, String major, String realName) {
+			String highestEducation, String major) {
 		super();
 		this.age = age;
 		this.gender = gender;
@@ -28,7 +28,6 @@ public class PersonalInfoDO {
 		this.graduaterSchool = graduaterSchool;
 		this.highestEducation = highestEducation;
 		this.major = major;
-		this.realName = realName;
 	}
 
 	public Integer getAge() {
