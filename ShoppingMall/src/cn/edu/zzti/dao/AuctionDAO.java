@@ -8,6 +8,11 @@ import cn.edu.zzti.entity.AuctionDO;
 //商品操作
 public interface AuctionDAO extends BaseDAO {
 	
+	/*
+	 * 该接口定义了商品基本操作的相关方法,包括获取全部商品信息.
+	 * 获取指定商品信息,添加商品信息及删除指定商品信息.
+	 */
+	
 	//从数据源中获取指定id对应的商品信息
 	public AuctionDO getAuction(String id) throws SQLException;
 	
