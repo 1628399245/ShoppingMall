@@ -4,12 +4,14 @@ import java.util.Date;
 
 public class UserDO {
 	
+	/*
+	 * UserDO类实现对用户登录信息的封装,如用户名,密码等.
+	 */
+	
 	private String username;
 	private String password;
 	private Date loginTime;
 	private PersonalInfoDO pi;
-	
-	
 	
 	public UserDO() {}
 
