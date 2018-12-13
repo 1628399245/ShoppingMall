@@ -1,6 +1,11 @@
 package cn.edu.zzti.entity;
 
 public class CartDO {
+	
+	/*
+	 * CartDO类实现对购物车的封装,根据系统功能要求,购物车应该包括商品名称,商品数量,价格等信息.
+	 */
+	
 	private AuctionDO auctionDO;
 	private double totlePrice;
 	private int number;
@@ -23,7 +28,5 @@ public class CartDO {
 	public void setNumber(int number) {
 		this.number = number;
 	}
-	
-	
 
 }
