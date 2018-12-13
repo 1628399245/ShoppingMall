@@ -7,6 +7,11 @@ import cn.edu.zzti.entity.UserDO;
 
 public interface UserDAO extends BaseDAO{
 	
+	/*
+	 * UserDAO接口继承自BaseDAO接口.
+	  * 定义了获取所有用户信息,查找用户,增加及删除用户等方法.
+	 */
+	
 	//获得系统中所有用户
 	public List<UserDO> getAll() throws SQLException;
 	
