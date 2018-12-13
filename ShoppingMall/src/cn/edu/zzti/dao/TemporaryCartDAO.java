@@ -7,6 +7,11 @@ import cn.edu.zzti.entity.CartDO;
 
 public interface TemporaryCartDAO extends BaseDAO{
 	
+	/*
+	 * PersonalInfoDAO接口继承自BaseDAO接口.
+	  * 定义了获取个人基本信息和设置个人基本信息等基本方法.
+	 */
+	
 	//添加商品到临时购物车中
 	public void addToCart(String username,AuctionDO auctionDO);
 	
