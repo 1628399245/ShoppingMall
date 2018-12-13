@@ -13,6 +13,12 @@ import cn.edu.zzti.entity.UserDO;
 
 public class UserDAOImpl implements UserDAO{
 	
+	/*
+	 * UserDAO的实现,利用HashMap存储所有用户.
+	 * admin+序号作为键,用户信息UserDO作为值,增加,删除.
+	  * 更新用户就是针对该HashMap做相应的增删改操作.
+	 */
+	
 	static Map<String,UserDO>userList = new HashMap<String,UserDO>();
 	
 	static {
