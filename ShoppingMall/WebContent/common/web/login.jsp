@@ -18,7 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		out.print("<font color ='red'>"+error+"</font><br>");
 	}
 	%>
-	<form action = "servlet/LoginServlet" method = "post">
+	<form action = "LoginServlet" method = "post">
 	用户名:<input type = "text" name = "username"/><br>
 	密码:　<input type = "text" name = "password"/><br>
 	<input type = "submit" value ="登录">
