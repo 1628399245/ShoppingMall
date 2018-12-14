@@ -45,7 +45,7 @@
 						<td><%=list.get(i).getDescription()%></td>
 						<td><%=list.get(i).getPrice()%></td>
 						<td><a
-							href="<%=pageContext.getServletContext().getContextPath()%>/web/AddCartServlet?id=<%=list.get(i).getId()%>">加入购物车</a></td>
+							href="<%=pageContext.getServletContext().getContextPath()%>/AddCartServlet?id=<%=list.get(i).getId()%>">加入购物车</a></td>
 					</tr>
 					<%
 							}
