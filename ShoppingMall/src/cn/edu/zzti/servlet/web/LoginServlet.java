@@ -1,11 +1,16 @@
 package cn.edu.zzti.servlet.web;
 
 import java.io.IOException;
+import java.sql.SQLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import cn.edu.zzti.dao.impl.constance.UserDAOImpl;
+import cn.edu.zzti.entity.UserDO;
 
 /**
  * Servlet implementation class LoginServlet
@@ -46,23 +51,29 @@ public class LoginServlet extends HttpServlet {
 		String errorInfo = "";
 		String path = request.getContextPath();
 		String forwardPath = "/login.jsp";
-		
-		if (username != null && !"".equals(username.trim()) && password != null && !"".equals(password.trim())) {
+		UserDAOImpl userDAO = new UserDAOImpl();
 
-			if (!"admin".equals(username) || !"admin".equals(password)) {
+		UserDO user = new UserDO();
+		try {
 
-				errorInfo = "用户名或者密码错误";
+			user = userDAO.findUser(username, password);
 
-			}
-			if ("admin".equals(username) && "admin".equals(password)) {
+		} catch (SQLException e) {
 
-				forwardPath = path+"/GetAllAuctionServlet";
-
-			}
-			request.setAttribute("errorInfo", errorInfo);
-			response.sendRedirect(forwardPath);
+			e.printStackTrace();
 
 		}
+
+		if (user != null) {
+			forwardPath = path + "/GetAllAuctionServlet";
+		} else {
+			errorInfo = "用户名或者密码错误";
+		}
+
+		request.setAttribute("errorInfo", errorInfo);
+		request.getSession().setAttribute("user", user);
+		response.sendRedirect(forwardPath);
+
 	}
 
 }
